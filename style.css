@@ -1,6 +1,9 @@
-body {
+* {
     margin: 0; 
     padding: 0;
+}
+
+body {
     background: #040D11;
     font-family: 'Poppins';
     color: white;
@@ -45,6 +48,14 @@ header {
     z-index: 10;
     margin-left: 150px;
 }
+header h1 {
+    position: absolute;
+    top: 19px;
+    left: -7.3rem;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
 header ul li img {
     width: 15px;
     margin: 0 10px;
@@ -52,7 +63,7 @@ header ul li img {
 header ul {
     display: flex;
     position: absolute;
-    top: 10px;
+    top: 25px;
     list-style-type: none;
 }
 header ul li {
@@ -126,7 +137,6 @@ nav ul li:hover {
 
 /* landing page  */
 
-
 #show1 {
     margin-left: 8%;
     width: 100%;
@@ -140,7 +150,7 @@ nav ul li:hover {
     width: 30rem;
 }
 #show1 .second1 {
-    margin-top: 150px;
+    padding-top: 150px;
 }
 #show1 .second1, .second2 {
     color: #676A70;
@@ -158,11 +168,45 @@ nav ul li:hover {
 }
 #show1 ul {
     list-style-type: none;
-    display: flex;
     position: absolute;
-    top: 25rem;
-    left: 60rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -10rem;
+    margin-left: -20rem;
 }
+.boxcont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.box1 {
+    width: 100px;
+    height: 50px;
+    transform: translateX(-50%);
+    margin-bottom: 70px;
+    box-shadow: 1px 0px 0px 0px #70707055;
+}
+.boxcont p {
+    color: #707070b9;
+    margin: 10px 0;
+}
+.boxcont img {
+    width: 20px;
+    animation: mouseup 1s ease-out infinite alternate-reverse;
+}
+
 
 /* PROJECTS */
 
@@ -288,7 +332,6 @@ p {
 
 
 #show4 {
-    padding-top: 15rem;
     margin-left: 8%;
     height: 100vh;
 }
@@ -296,6 +339,7 @@ p {
     font-size: 20px;
 }
 #show4 .firstxt {
+    padding-top: 15rem;
     margin-left: 5rem;
 }
 #show4 .GetInT {
@@ -351,7 +395,15 @@ p {
 
 /* KEYFRAMES */
 
-@keyframes boxmove1 {
+@keyframes mouseup {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+}
+/* @keyframes boxmove1 {
     from {
         top:0;
         left: 0;
@@ -378,5 +430,11 @@ p {
         left: 0;
         height: 70vh;
         width: 50%;
+    }
+} */
+
+@media (max-width:768px) {
+    nav {
+        display: none;
     }
 }

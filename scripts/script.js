@@ -11,49 +11,40 @@ lista = document.querySelectorAll("nav ul li");
 
 btn1.addEventListener("click", () => {
   show2.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  box.style.animation = 'boxmove1 0.2s forwards';
 });
 btn2.addEventListener("click", () => {
   show3.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
-  box.style.animation = 'boxmove1 0.2s forwards';
 });
 btn3.addEventListener("click", () => {
   show4.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
-  box.style.animation = 'boxmove1 0.2s forwards';
 });
 btn4.addEventListener("click", () => {
   window.scrollTo({top: 0, behavior: 'smooth',})
-  box.style.animation = 'boxmove2 0.2s forwards';
-
 });
 
 window.addEventListener('scroll', function () {
 
-console.log(window.pageYOffset);
+// console.log(window.pageYOffset);
 var scroll = window.pageYOffset;
 if (scroll == 0) {
-  box.style.animation = 'boxmove2 0.2s forwards';
+  lista[0].classList.remove("addthis");
 }
 else {
-  lista[0].classList.remove("addthis");
 }
 if (scroll >= 300 && scroll <=1100) {
   lista[0].classList.add("addthis");
-  box.style.animation = 'boxmove1 0.2s forwards';
 }
 else {
   lista[0].classList.remove("addthis");
 }
 if (scroll >= 1101 && scroll <=2100) {
   lista[1].classList.add("addthis");
-  box.style.animation = 'boxmove1 0.2s forwards';
 }
 else {
   lista[1].classList.remove("addthis");
 }
 if (scroll >= 2101) {
   lista[2].classList.add("addthis");
-  box.style.animation = 'boxmove1 0.2s forwards';
 }
 else {
   lista[2].classList.remove("addthis");
