@@ -80,7 +80,7 @@ nav {
     height: 100%;
     border-right: 1px solid rgb(47, 47, 47);
     box-sizing: border-box;
-    z-index: 1005;
+    z-index: 5;
 }
 .center {
     width: 100%;
@@ -178,6 +178,7 @@ nav ul li:hover {
     align-items: flex-end;
     margin-top: -10rem;
     margin-left: -20rem;
+    z-index: -10;
 }
 .boxcont {
     position: absolute;
@@ -185,7 +186,7 @@ nav ul li:hover {
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1;
+    z-index: -10;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -206,7 +207,64 @@ nav ul li:hover {
     width: 20px;
     animation: mouseup 1s ease-out infinite alternate-reverse;
 }
+.boxcont2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    z-index: -5;
+}
+.box2 {
+    width: 320px;
+    height: 200px;
+    margin-bottom: 5.5rem;
+    margin-left: 15rem;
+}
+.box3 {
+    position: absolute;
+    width: 320px;
+    height: 200px;
+    background: #10191A;
+    margin-bottom: 5.5rem;
+    margin-left: 15rem;
+    z-index: -1;
+    transform: translateX(-75%);
+    padding-left: 20rem;
+}
+.box2 .quote {
+    padding-top: 2rem;
+    font-size: 14px;
+}
+.boxcont2 .boxcont2-flex {
+    margin-top: 10px;
+    display: flex;
+}
+.boxcont2-flex img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.boxcont2-flex .line {
+    width: 35px;
+    height: 40px;
+    /* background: red; */
+    box-shadow: 0px -1px 0px 0px #707070b9;
+    transform: translateY(50%);
+    margin: 0 10px;
 
+}
+.boxcont2-flex p {
+    font-size: 14px;
+}
+.boxcont2-flex .p2 {
+    font-size: 13px;
+    color: #707070b9;
+}
 
 /* PROJECTS */
 
@@ -401,6 +459,41 @@ p {
     }
     to {
         transform: translateY(-30px);
+    }
+}
+@keyframes moveleft {
+    0% {
+        left: 0;
+    }
+    10% {
+        left: 10px;
+    }
+    100% {
+        left: -50rem;
+    }
+}
+@keyframes moveleft2 {
+    from {
+        left: -50rem;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fade2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 /* @keyframes boxmove1 {

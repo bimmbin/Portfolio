@@ -7,6 +7,8 @@ var btn2 = document.querySelector('#btn2');
 var btn3 = document.querySelector('#btn3');
 var btn4 = document.querySelector('#home');
 lista = document.querySelectorAll("nav ul li");
+var quote = document.querySelector('.boxcont2');
+var mouse = document.querySelector('.boxcont');
 
 
 btn1.addEventListener("click", () => {
@@ -24,10 +26,18 @@ btn4.addEventListener("click", () => {
 
 window.addEventListener('scroll', function () {
 
-// console.log(window.pageYOffset);
+console.log(window.pageYOffset);
 var scroll = window.pageYOffset;
 if (scroll == 0) {
   lista[0].classList.remove("addthis");
+  quote.style.animation = "moveleft2 0.5s ease-out forwards";
+  mouse.style.animation = "fade2 1s forwards";
+}
+else {
+}
+if (scroll >= 50) {
+  quote.style.animation = "moveleft 0.3s ease-in forwards";
+  mouse.style.animation = "fade 0.5s forwards";
 }
 else {
 }
