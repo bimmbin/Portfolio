@@ -153,11 +153,9 @@ nav ul li:hover {
     height: 100vh;
     scroll-snap-align: center;
 }
-
 #show1 .first1 {
     color: #f1f1f1;
     font-size: 50px;
-    width: 30rem;
 }
 #show1 .second1 {
     padding-top: 150px;
@@ -166,9 +164,6 @@ nav ul li:hover {
     color: #676A70;
     font-size: 20px;
     width: 23rem;
-}
-#show1 .first1, .second1, .second2 {
-    margin:0;
 }
 #show1 ul li img {
     width: 25px;
@@ -247,21 +242,21 @@ nav ul li:hover {
 }
 .box2 .quote {
     padding-top: 2rem;
-    font-size: 11px;
+    font-size: 14px;
 }
 .boxcont2 .boxcont2-flex {
     margin-top: 10px;
     display: flex;
 }
 .boxcont2-flex img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 20px;
 }
 .boxcont2-flex .line {
     width: 35px;
-    height: 30px;
+    height: 40px;
     /* background: red; */
     box-shadow: 0px -1px 0px 0px #707070b9;
     transform: translateY(50%);
@@ -269,10 +264,10 @@ nav ul li:hover {
 
 }
 .boxcont2-flex p {
-    font-size: 11px;
+    font-size: 14px;
 }
 .boxcont2-flex .p2 {
-    font-size: 10px;
+    font-size: 13px;
     color: #707070b9;
 }
 
@@ -529,8 +524,11 @@ p {
     
 
     /* section */ 
+    .container {
+        width: 85%;
+    }
 
-    /* show1 ********************* */
+    /* show1 */
 
     #box {
         display: none;
@@ -538,13 +536,73 @@ p {
     #show1 {
         margin-left: 0;
     }
-    .container {
-        width: 85%;
+    #show1 .first1 {
+        font-size: 35px;
+    }
+    #show1 .second1, .second2 {
+        font-size: 15px;
+        width: 16rem;
     }
     .box2, .box3 {
         margin-left: 2rem;
     }
 
+    #show1 ul {
+        flex-direction: column;
+        margin-top: -1rem;
+        margin-left: -2rem;
+    }
+    #show1 ul li {
+        margin: 7px 0;
+    }
+
+    /* quote section */
+
+    .box2 {
+        width: 200px;
+        height: 150px;
+    }
+    .box2 .quote {
+        padding-top: 0.76rem;
+        font-size: 11px;
+    }
+    .boxcont2-flex img {
+        width: 30px;
+        height: 30px;
+    }
+    .boxcont2-flex .line {
+        height: 30px;
+    }
+    .boxcont2-flex p {
+        font-size: 11px;
+    }
+    .boxcont2-flex .p2 {
+        font-size: 10px;
+    }
+    .box2, .box3 {
+        margin-bottom: 15rem;
+    }
+    .box3 {
+	height: 150px;
+	transform: translateX(-85%);
+    }
+    
+    /** * ** * ** * * * */
+
+    /* mouse feat section */
+    
+    .box1 {
+        height: 25px;
+        margin-bottom: 0px;
+    }
+    .boxcont p {
+        font-size: 8px;
+        margin: 5px 0;
+    }
+    .boxcont img {
+        width: 12px;
+    }
+    /** * ** * ** * * * */
     /* keyframes */
 
     
