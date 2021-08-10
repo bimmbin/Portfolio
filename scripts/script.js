@@ -5,7 +5,8 @@ const show4 = document.querySelector('#show4');
 var btn1 = document.querySelector('#btn1');
 var btn2 = document.querySelector('#btn2');
 var btn3 = document.querySelector('#btn3');
-var btn4 = document.querySelector('#home');
+var btnHome1 = document.querySelector('.home1');
+var btnHome2 = document.querySelector('.home2');
 lista = document.querySelectorAll("nav ul li");
 var quote = document.querySelector('.boxcont2');
 var mouse = document.querySelector('.boxcont');
@@ -20,7 +21,10 @@ btn2.addEventListener("click", () => {
 btn3.addEventListener("click", () => {
   show4.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
 });
-btn4.addEventListener("click", () => {
+btnHome1.addEventListener("click", () => {
+  window.scrollTo({top: 0, behavior: 'smooth',})
+});
+btnHome2.addEventListener("click", () => {
   window.scrollTo({top: 0, behavior: 'smooth',})
 });
 
