@@ -542,19 +542,22 @@ p {
     }
     header {
         position: fixed;
+        height: 60px;
     }
     header h1 {
         display: block;
+        margin-left: 1.5rem;
+        margin-top: 13px;
     }
     header ul {
-        margin-left: 2rem;
-        margin-top: 28px;
+        margin-left: 0.5rem;
+        margin-top: 23px;
     }
     header ul li {
-        font-size: 13px;
-        margin: 0 10px;
+        font-size: 12px;
+        margin: 0 5px;
     }
     header ul li img {
-        width: 13px;
+        width: 12px;
     }
 }
