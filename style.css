@@ -384,26 +384,31 @@ p {
 }
 .design {
     float: right;
-    margin-top: -10.9rem;
+    margin-top: -7rem;
     margin-right: 5rem;
 }
 .dskill {
     font-size: 30px;
 }
 
+
 /* CONTACT */
 
 
 #show4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-left: 8%;
     height: 100vh;
+    width: 100%;
 }
 #show4 p {
     font-size: 20px;
 }
 #show4 .firstxt {
-    padding-top: 15rem;
-    margin-left: 5rem;
+    padding-top: 0rem;
+    margin-left: 0rem;
 }
 #show4 .GetInT {
     font-size: 30px;
@@ -411,36 +416,34 @@ p {
 }
 #show4 .GetInT2 { 
     font-size: 19px;
-    width: auto;
 }
 #show4 form {
-    position: relative;
-    float: right;
-    margin-right: 15rem;
-    margin-top: -8rem;
-    padding: 15px 20px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 365px;
+    height: 370px;
+    padding: 10px 20px 25px;
     border-radius: 5px;
     background: #040D11;
     box-shadow: 3px 3px 6px black;
     
 }
 #show4 .txtfield {
-    width: 20rem;
+    width: 19.8rem;
     padding: 3px;
     outline: none;
-    background: #cacaca;
+    background: #fff;
 }
 #show4 textarea {
     width: 20.2rem;
     padding-bottom: 6rem;
     outline: none;
     resize: none;
-    background: #cacaca;
+    background: #fff;
 }
 #show4 button {
-    position: absolute;
-    top: 22.5rem;
-    left: 8.4rem;
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 15px;
@@ -453,6 +456,15 @@ p {
 #show4 form p {
     font-size: 16px;
     padding: 10px 0 0 0;
+}
+#show4 form p:nth-child(1) {
+    margin-right: 17rem;
+}
+#show4 form p:nth-child(3) {
+    margin-right: 17.5rem;
+}
+#show4 form p:nth-child(5) {
+    margin-right: 15.7rem;
 }
 
 
@@ -602,6 +614,40 @@ p {
     .boxcont img {
         width: 12px;
     }
+    /** * ** * ** * * * */
+
+    /* show2 */
+    
+    #show2 {
+        margin-left: 0%;
+        flex-direction: column;
+    } 
+    .projContainer {
+        margin: 20px 0;
+    }
+    /** * ** * ** * * * */
+
+    /* show3 */
+    
+    #show3 {
+        margin-left: 0;
+        margin-top: 25rem;
+    } 
+    .design {
+        float: none;
+        margin-top: 0;
+    }
+    /** * ** * ** * * * */
+
+    /* show3 */
+    
+    #show4 {
+        margin-top: 15rem;
+        margin-left: 0;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+    } 
     /** * ** * ** * * * */
     /* keyframes */
 
