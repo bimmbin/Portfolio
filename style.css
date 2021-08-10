@@ -247,7 +247,7 @@ nav ul li:hover {
 }
 .box2 .quote {
     padding-top: 2rem;
-    font-size: 14px;
+    font-size: 10px;
 }
 .boxcont2 .boxcont2-flex {
     margin-top: 10px;
@@ -528,7 +528,9 @@ p {
     }
     
 
-    /* section */
+    /* section */ 
+
+    /* show1 ********************* */
 
     #box {
         display: none;
