@@ -7,7 +7,7 @@ body {
     background: #040D11;
     font-family: 'Poppins';
     color: white;
-    height: 100vh;
+    height: 100%;
 }
 footer {
     position: absolute;
@@ -27,12 +27,6 @@ footer p {
     height: 100%;
 }
 
-h1 {
-    margin: 0;
-}
-h2 {
-    margin: 0;
-}
 .container {
     width: 80%;
     margin: auto;
@@ -65,6 +59,7 @@ header h1 {
     margin-top: 0px;
     display: none;
     user-select: none;  
+    color: green;
 }
 header ul {
     display: flex;
