@@ -247,21 +247,21 @@ nav ul li:hover {
 }
 .box2 .quote {
     padding-top: 2rem;
-    font-size: 10px;
+    font-size: 11px;
 }
 .boxcont2 .boxcont2-flex {
     margin-top: 10px;
     display: flex;
 }
 .boxcont2-flex img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 20px;
 }
 .boxcont2-flex .line {
     width: 35px;
-    height: 40px;
+    height: 30px;
     /* background: red; */
     box-shadow: 0px -1px 0px 0px #707070b9;
     transform: translateY(50%);
@@ -269,10 +269,10 @@ nav ul li:hover {
 
 }
 .boxcont2-flex p {
-    font-size: 14px;
+    font-size: 11px;
 }
 .boxcont2-flex .p2 {
-    font-size: 13px;
+    font-size: 10px;
     color: #707070b9;
 }
 
