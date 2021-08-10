@@ -1,3 +1,4 @@
+var babo = document.querySelector("header");
 const show1 = document.querySelector("#show1");
 const show2 = document.querySelector("#show2");
 const show3 = document.querySelector('#show3');
@@ -36,12 +37,14 @@ if (scroll == 0) {
   lista[0].classList.remove("addthis");
   quote.style.animation = "moveleft2 0.5s ease-out forwards";
   mouse.style.animation = "fade2 1s forwards";
+  babo.style.background = "";
 }
 else {
 }
 if (scroll >= 50) {
   quote.style.animation = "moveleft 0.3s ease-in forwards";
   mouse.style.animation = "fade 0.5s forwards";
+  babo.style.background = "#030A0C";
 }
 else {
 }

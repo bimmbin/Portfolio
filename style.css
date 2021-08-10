@@ -62,22 +62,22 @@ header {
 header h1 {
     font-size: 22px;
     cursor: pointer;
-    margin-top: 18px;
-    margin-left: 34px; 
-    display: none;  
+    margin-top: 0px;
+    display: none;
+    user-select: none;  
 }
 header ul {
     display: flex;
     list-style-type: none;
-    margin-top: 22.5px;
-    margin-left: 12.5rem;
+    margin-top: 5px;
+    margin-left: 4.6rem;
 }
 header ul li img {
     width: 15px;
     margin: 0 10px;
 }
 header ul li {
-    margin: 0 50px;
+    margin: 0 20px;
     color: #676A70;
 }
 
@@ -506,58 +506,44 @@ p {
         opacity: 1;
     }
 }
-/* @keyframes boxmove1 {
-    from {
-        top:0;
-        left: 0;
-        height: 70vh;
-        width: 50%;
-    }
-    to {
-        top: 71px;
-        left: 150px;
-        height: 222rem;
-        width: 100%;
-    }
-}
 
-@keyframes boxmove2 {
-    from {
-        top: 71px;
-        left: 150px;
-        height: 222rem;
-        width: 100%;
-    }
-    to {
-        top:0;
-        left: 0;
-        height: 70vh;
-        width: 50%;
-    }
-} */
 
 @media (max-width:768px) {
+
+    /* header  */
     nav {
         display: none;
     }
     header {
         position: fixed;
-        height: 60px;
+        border: none;
+        transition: 0.5s;
     }
     header h1 {
         display: block;
-        margin-left: 1.5rem;
-        margin-top: 13px;
+        margin-left: 0;
     }
     header ul {
-        margin-left: 0.5rem;
-        margin-top: 23px;
+        display: none;
     }
-    header ul li {
-        font-size: 12px;
-        margin: 0 5px;
+    
+
+    /* section */
+
+    #box {
+        display: none;
     }
-    header ul li img {
-        width: 12px;
+    #show1 {
+        margin-left: 0;
     }
+    .container {
+        width: 85%;
+    }
+    .box2, .box3 {
+        margin-left: 2rem;
+    }
+
+    /* keyframes */
+
+    
 }
