@@ -5,9 +5,12 @@ const show1 = document.querySelector("#show1");
 const show2 = document.querySelector("#show2");
 const show3 = document.querySelector('#show3');
 const show4 = document.querySelector('#show4');
-var btn1 = document.querySelector('#btn1');
-var btn2 = document.querySelector('#btn2');
-var btn3 = document.querySelector('#btn3');
+var btn1 = document.querySelector('.btn1');
+var btn2 = document.querySelector('.btn2');
+var btn3 = document.querySelector('.btn3');
+var btnPc1 = document.querySelector('#btnPc1');
+var btnPc2 = document.querySelector('#btnPc2');
+var btnPc3 = document.querySelector('#btnPc3');
 var btnHome1 = document.querySelector('.home1');
 var btnHome2 = document.querySelector('.home2');
 lista = document.querySelectorAll("nav ul li");
@@ -17,6 +20,16 @@ var mouse = document.querySelector('.boxcont');
 pindut.addEventListener("click", () => {
   pindut.classList.toggle('active');
   menu.classList.toggle('active');
+});
+
+btnPc1.addEventListener("click", () => {
+  show2.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+});
+btnPc2.addEventListener("click", () => {
+  show3.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+});
+btnPc3.addEventListener("click", () => {
+  show4.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 });
 
 btn1.addEventListener("click", () => {

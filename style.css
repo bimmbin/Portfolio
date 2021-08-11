@@ -28,7 +28,7 @@ footer p {
 }
 
 .container1 {
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     height: 70px;
@@ -59,7 +59,7 @@ header {
     height: 70px;
     width: 100%;
     border-bottom: 1px solid rgb(47, 47, 47);
-    z-index: 50000;
+    z-index: 50;
 }
 header h1 {
     font-size: 22px;
@@ -67,7 +67,7 @@ header h1 {
     margin-top: 0px;
     display: none;
     user-select: none;  
-    color: rgb(255, 255, 255);
+    color: rgb(18, 192, 245);
     width: fit-content;
 }
 header ul {
@@ -106,7 +106,7 @@ header ul li {
     margin-top: 60px;
 }
 .menu.active {
-    animation: menuDown 0.5s ease-out forwards;
+    animation: menuDown 0.4s ease-out forwards;
 }
 .toggle {
     position: relative;
@@ -118,6 +118,7 @@ header ul li {
     background-position: center;
     cursor: pointer;
     display: none;
+    margin: 5px 10px 0 0;
 }
 .toggle.active { 
     background: url('/img/closeIcon.png');
@@ -568,7 +569,7 @@ p {
 }
 @keyframes menuDown {
     from {
-        transform: translateY(-50rem);
+        transform: translateY(-20rem);
     }
     to {
         transform: translateY(0rem);
