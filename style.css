@@ -27,6 +27,15 @@ footer p {
     height: 100%;
 }
 
+.container1 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -46,12 +55,11 @@ section {
 }
 
 header {
-    position: relative;
+    position: absolute;
     height: 70px;
     width: 100%;
     border-bottom: 1px solid rgb(47, 47, 47);
-    z-index: 5;
-    display: flex;
+    z-index: 50000;
 }
 header h1 {
     font-size: 22px;
@@ -59,7 +67,8 @@ header h1 {
     margin-top: 0px;
     display: none;
     user-select: none;  
-    color: rgb(236, 227, 103);
+    color: rgb(255, 255, 255);
+    width: fit-content;
 }
 header ul {
     display: flex;
@@ -75,6 +84,50 @@ header ul li {
     margin: 0 20px;
     color: #676A70;
 }
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #030A0C;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -2;
+    transform: translateY(-50rem);
+}
+.menu p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.menu p:nth-child(1) {
+    margin-top: 60px;
+}
+.menu.active {
+    animation: menuDown 0.5s ease-out forwards;
+}
+.toggle {
+    position: relative;
+    background: url('/img/burgerIcon.png');
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    display: none;
+}
+.toggle.active { 
+    background: url('/img/closeIcon.png');
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+
 
 
 nav {
@@ -221,7 +274,7 @@ nav ul li:hover {
 .box2 {
     width: 320px;
     height: 200px;
-    margin-bottom: 5.5rem;
+    margin-bottom: 1.2rem;
     margin-left: 15rem;
 }
 .box3 {
@@ -229,7 +282,7 @@ nav ul li:hover {
     width: 320px;
     height: 200px;
     background: #10191A;
-    margin-bottom: 5.5rem;
+    margin-bottom: 1.2rem;
     margin-left: 15rem;
     z-index: -1;
     transform: translateX(-75%);
@@ -513,6 +566,15 @@ p {
         opacity: 1;
     }
 }
+@keyframes menuDown {
+    from {
+        transform: translateY(-50rem);
+    }
+    to {
+        transform: translateY(0rem);
+    }
+}
+
 
 
 @media (max-width:768px) {
@@ -524,14 +586,16 @@ p {
     header {
         position: fixed;
         border: none;
-        transition: 0.5s;
     }
     header h1 {
         display: block;
         margin-left: 0;
-    }
-    header ul {
+    } 
+    header .info {
         display: none;
+    }
+    .toggle {
+        display: block;
     }
     
 

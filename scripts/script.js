@@ -1,4 +1,6 @@
 var babo = document.querySelector("header");
+var pindut = document.querySelector(".toggle");
+var menu = document.querySelector(".menu");
 const show1 = document.querySelector("#show1");
 const show2 = document.querySelector("#show2");
 const show3 = document.querySelector('#show3');
@@ -12,15 +14,25 @@ lista = document.querySelectorAll("nav ul li");
 var quote = document.querySelector('.boxcont2');
 var mouse = document.querySelector('.boxcont');
 
+pindut.addEventListener("click", () => {
+  pindut.classList.toggle('active');
+  menu.classList.toggle('active');
+});
 
 btn1.addEventListener("click", () => {
   show2.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  pindut.classList.toggle('active');
+  menu.classList.toggle('active');
 });
 btn2.addEventListener("click", () => {
   show3.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+  pindut.classList.toggle('active');
+  menu.classList.toggle('active');
 });
 btn3.addEventListener("click", () => {
   show4.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+  pindut.classList.toggle('active');
+  menu.classList.toggle('active');
 });
 btnHome1.addEventListener("click", () => {
   window.scrollTo({top: 0, behavior: 'smooth',})
