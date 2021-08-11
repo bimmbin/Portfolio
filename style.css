@@ -59,7 +59,7 @@ header h1 {
     margin-top: 0px;
     display: none;
     user-select: none;  
-    color: rgb(74, 166, 189);
+    color: rgb(236, 227, 103);
 }
 header ul {
     display: flex;
@@ -358,16 +358,21 @@ p {
     font-size: 20px;
     margin: 20px 0;
 }
-.bgskill {
+#show3 ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#show3 ul li {
     background: white;
     padding: 6px 10px;
     border: 2px solid black;
     border-radius: 10px;
     font-weight: bold;
     color: black;
-    line-height: 4rem;
     background-clip: padding-box;
-    
+    width: fit-content;
+    margin-bottom: 5px;
 }
 .skill4, .dskill3 {
     line-height: 1px;
@@ -379,7 +384,7 @@ p {
 }
 .design {
     float: right;
-    margin-top: -7rem;
+    margin-top: -10rem;
     margin-right: 5rem;
 }
 .dskill {
@@ -648,6 +653,23 @@ p {
     }
     #show4 form {
         margin-top: -2rem;
+        width: 300px;
+    }
+    #show4 .txtfield {
+        width: 17.5rem;
+    }
+    #show4 textarea {
+        width: 18rem;
+    }
+
+    #show4 form p:nth-child(1) {
+        margin-right: 15.1rem;
+    }
+    #show4 form p:nth-child(3) {
+        margin-right: 15.6rem;
+    }
+    #show4 form p:nth-child(5) {
+        margin-right: 13.8rem;
     }
     /** * ** * ** * * * */
     /* keyframes */
