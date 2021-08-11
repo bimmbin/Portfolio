@@ -67,7 +67,7 @@ header h1 {
     margin-top: 0px;
     display: none;
     user-select: none;  
-    color: rgb(245, 18, 245);
+    color: rgb(82, 245, 18);
     width: fit-content;
 }
 header ul {
@@ -119,6 +119,7 @@ header ul li {
     cursor: pointer;
     display: none;
     margin: 5px 10px 0 0;
+    user-select: none;  
 }
 .toggle.active { 
     background: url('./img/closeIcon.png');
