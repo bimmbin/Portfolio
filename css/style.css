@@ -110,7 +110,7 @@ header ul li {
 }
 .toggle {
     position: relative;
-    background: url('./img/burgerIcon.png');
+    background: url('../img/burgerIcon.png');
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@ header ul li {
     user-select: none;  
 }
 .toggle.active { 
-    background: url('./img/closeIcon.png');
+    background: url('../img/closeIcon.png');
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
@@ -525,61 +525,9 @@ p {
 
 /* KEYFRAMES */
 
-@keyframes mouseup {
-    from {
-        transform: translateY(0px);
-    }
-    to {
-        transform: translateY(-30px);
-    }
-}
-@keyframes moveleft {
-    0% {
-        left: 0;
-    }
-    10% {
-        left: 10px;
-    }
-    100% {
-        left: -50rem;
-    }
-}
-@keyframes moveleft2 {
-    from {
-        left: -50rem;
-    }
-    to {
-        left: 0;
-    }
-}
-@keyframes fade {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-@keyframes fade2 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes menuDown {
-    from {
-        transform: translateY(-20rem);
-    }
-    to {
-        transform: translateY(0rem);
-    }
-}
 
 
-
-@media (max-width:768px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
     /* header  */
     nav {
