@@ -1,31 +1,43 @@
-@media (min-width: 2560px) and (max-width: 3000px) {
+@media (min-width: 3840px) {
 
     header {
-        height: 100px;
+        height: 10rem;
+    }
+    nav {
+        width: 15rem;
     }
     nav h1 {
-        padding: 28px 28px;
+        padding: 50px 45px;
+        font-size: 40px;
+    }
+    nav ul li {
         font-size: 25px;
+        padding: 20px 65px;
     }
     header ul {
-        padding-top: 30px;
-        padding-left: 4rem;
+        padding-top: 6.5rem;
+        padding-left: 11rem;
     }
     header ul li{
         margin: 0 3.5rem;
+        font-size: 30px;
     }
+    .container {
+        width: 70%;
+    }
+
     #show1 {
-        height: 1440px;
+        height: 2160px;
     }
     #show1 .first1 {
-        font-size: 70px;
+        font-size: 120px;
     }
     #show1 .second1 {
-        padding-top: 20rem;
+        padding-top: 35rem;
     }
     #show1 .second1, .second2 {
-        font-size: 25.8px;
-        width: 30rem;
+        font-size: 40px;
+        width: 45rem;
     }
     
     .box1 {
@@ -52,7 +64,7 @@
         font-size: 14px;
     }
     .box2, .box3 {
-        margin-bottom: 5.5rem;
+        margin-bottom: 12rem;
         height: 250px;
     }
     .box3 {
@@ -62,7 +74,7 @@
 
 
     #show2 {
-        height: 1440px;
+        height: 2160px;
     }
     #show2 img {
         width: 400px;
@@ -100,7 +112,7 @@
 
 
     #show3 {
-        height: 1440px;
+        height: 2160px;
     }
     #show3 .first2 {
         margin-top: 15rem;
@@ -130,7 +142,7 @@
 
 
     #show4 {
-        height: 1440px;
+        height: 2160px;
         margin-left: 0;
     }
     #show4 .GetInT {

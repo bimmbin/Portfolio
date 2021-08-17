@@ -17,6 +17,7 @@ lista = document.querySelectorAll("nav ul li");
 var quote = document.querySelector('.boxcont2');
 var mouse = document.querySelector('.boxcont');
 
+
 pindut.addEventListener("click", () => {
   pindut.classList.toggle('active');
   menu.classList.toggle('active');
@@ -54,38 +55,83 @@ btnHome2.addEventListener("click", () => {
   window.scrollTo({top: 0, behavior: 'smooth',})
 });
 
+var x = window.matchMedia("(min-width: 2560px)"||"(max-width: 3100px)")
+var y = window.matchMedia("(min-width: 3840px)")
+var z = window.matchMedia("(max-width: 2500px)")
+
+// default scroll value
+// var scroll1 = 300;
+// var scroll2 = 1100;
+
+// var scroll3 = 1101;
+// var scroll4 = 2100;
+
+// var scroll5 = 2101;
+// default scroll value
+if (x.matches) {
+  var scroll1 = 700;
+  var scroll2 = 2000;
+
+  var scroll3 = 2001;
+  var scroll4 = 3400;
+
+  var scroll5 = 3401;
+}
+else if (y.matches) {
+  var scroll1 = 1000;
+  var scroll2 = 2900;
+
+  var scroll3 = 3100;
+  var scroll4 = 4700;
+
+  var scroll5 = 5600;
+
+}
+else if (z.matches) {
+var scroll1 = 400;
+var scroll2 = 1100;
+
+var scroll3 = 1101;
+var scroll4 = 2400;
+
+var scroll5 = 2401;
+}
+
 window.addEventListener('scroll', function () {
 
 console.log(window.pageYOffset);
 var scroll = window.pageYOffset;
+
 if (scroll == 0) {
   lista[0].classList.remove("addthis");
   quote.style.animation = "moveleft2 0.5s ease-out forwards";
   mouse.style.animation = "fade2 1s forwards";
   babo.style.background = "";
+  babo.style.boxShadow = "";
 }
 else {
 }
 if (scroll >= 50) {
   quote.style.animation = "moveleft 0.3s ease-in forwards";
   mouse.style.animation = "fade 0.5s forwards";
-  babo.style.background = "#030A0C";
+  babo.style.background = "#212121";
+  babo.style.boxShadow = "3px 3px 6px black";
 }
 else {
 }
-if (scroll >= 300 && scroll <=1100) {
+if (scroll >= scroll1 && scroll <= scroll2) {
   lista[0].classList.add("addthis");
 }
 else {
   lista[0].classList.remove("addthis");
 }
-if (scroll >= 1101 && scroll <=2100) {
+if (scroll >= scroll3 && scroll <= scroll4) {
   lista[1].classList.add("addthis");
 }
 else {
   lista[1].classList.remove("addthis");
 }
-if (scroll >= 2101) {
+if (scroll >= scroll5) {
   lista[2].classList.add("addthis");
 }
 else {
