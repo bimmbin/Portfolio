@@ -67,8 +67,12 @@ header {
     position: absolute;
     height: 70px;
     width: 100%;
-    border-bottom: 1px solid rgb(47, 47, 47);
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: rgb(47, 47, 47);
     z-index: 50;
+    transform: translateX(100%); 
+    animation: headani 0.8s ease-in-out forwards;
 }
 header h1 {
     font-size: 22px;
@@ -147,9 +151,14 @@ nav {
     left: 0;
     width: 150px;
     height: 100%;
-    border-right: 1px solid rgb(47, 47, 47);
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+    border-color: rgb(47, 47, 47);
     box-sizing: border-box;
     z-index: 50;
+    transform: translateY(-100%);
+    animation: navani 1s 0.9s ease-in-out forwards;
+
 }
 .center {
     width: 100%;
@@ -199,9 +208,6 @@ nav ul li:hover {
     box-shadow: 1px 0px 0px 0px #9413B1;
     color: white;
 }
-
-
-
 
 /* landing page  */
 
@@ -530,7 +536,12 @@ p {
 }
 
 
-/* KEYFRAMES */
+.slide1 {
+    animation: slideup 0.5s 2s linear forwards;
+    opacity: 0;
+}
+
+
 
 
 
@@ -543,6 +554,8 @@ p {
     header {
         position: fixed;
         border: none;
+        transform: translateX(0rem); 
+        animation: none;
     }
     header h1 {
         display: block;
@@ -562,12 +575,17 @@ p {
     }
 
     /* show1 */
-
+    .slide1 {
+        animation: slideup 1s 1.2s linear forwards;
+    }
     #box {
         display: none;
     }
     #show1 {
         margin-left: 0;
+    }
+    #show1 .second1 {
+        padding-top: 12rem;
     }
     #show1 .first1 {
         font-size: 35px;

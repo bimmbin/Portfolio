@@ -18,6 +18,8 @@ var quote = document.querySelector('.boxcont2');
 var mouse = document.querySelector('.boxcont');
 
 
+quote.style.animation = "moveleft2 0.8s ease-out forwards";
+
 pindut.addEventListener("click", () => {
   pindut.classList.toggle('active');
   menu.classList.toggle('active');
@@ -55,7 +57,8 @@ btnHome2.addEventListener("click", () => {
   window.scrollTo({top: 0, behavior: 'smooth',})
 });
 
-var x = window.matchMedia("(min-width: 2560px)"||"(max-width: 3100px)")
+var x = window.matchMedia("(min-width: 2560px")
+var x2 = window.matchMedia("(max-width: 3100px)")
 var y = window.matchMedia("(min-width: 3840px)")
 var z = window.matchMedia("(max-width: 2500px)")
 
@@ -68,7 +71,7 @@ var z = window.matchMedia("(max-width: 2500px)")
 
 // var scroll5 = 2101;
 // default scroll value
-if (x.matches) {
+if (x.matches&&x2.matches) {
   var scroll1 = 700;
   var scroll2 = 2000;
 
@@ -85,7 +88,6 @@ else if (y.matches) {
   var scroll4 = 4700;
 
   var scroll5 = 5600;
-
 }
 else if (z.matches) {
 var scroll1 = 400;
@@ -99,7 +101,7 @@ var scroll5 = 2401;
 
 window.addEventListener('scroll', function () {
 
-console.log(window.pageYOffset);
+// console.log(window.pageYOffset);
 var scroll = window.pageYOffset;
 
 if (scroll == 0) {
@@ -140,7 +142,8 @@ else {
 
 });
 
-
+var hayt = window.innerHeight;
+console.log(hayt);
 // var btn1 = document.querySelector('.btn1');
 
 

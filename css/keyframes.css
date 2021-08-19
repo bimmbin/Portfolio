@@ -20,9 +20,11 @@
 @keyframes moveleft2 {
     from {
         left: -50rem;
+        opacity: 0;
     }
     to {
         left: 0;
+        opacity: 1;
     }
 }
 @keyframes fade {
@@ -47,5 +49,36 @@
     }
     to {
         transform: translateY(0rem);
+    }
+}
+
+@keyframes slideup {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes headani {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+        border-width: 0px 0px 1px 0px;
+    }
+}
+
+@keyframes navani {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+        border-width: 0px 1px 0px 0px;
     }
 }
