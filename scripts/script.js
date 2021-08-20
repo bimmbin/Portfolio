@@ -13,7 +13,7 @@ var btnPc2 = document.querySelector('#btnPc2');
 var btnPc3 = document.querySelector('#btnPc3');
 var btnHome1 = document.querySelector('.home1');
 var btnHome2 = document.querySelector('.home2');
-lista = document.querySelectorAll("nav ul li");
+var lista = document.querySelectorAll("nav ul li");
 var quote = document.querySelector('.boxcont2');
 var mouse = document.querySelector('.boxcont');
 
@@ -105,8 +105,8 @@ window.addEventListener('scroll', function () {
 var scroll = window.pageYOffset;
 
 if (scroll == 0) {
-  lista[0].classList.remove("addthis");
   quote.style.animation = "moveleft2 0.5s ease-out forwards";
+  lista[0].classList.remove("addthis");
   mouse.style.animation = "fade2 1s forwards";
   babo.style.background = "";
   babo.style.boxShadow = "";
@@ -158,9 +158,36 @@ console.log(hayt);
 
 // });
 
+var kote = document.querySelectorAll('.box2');
+var currentQuote = 0;
+kote[currentQuote].classList.add("fadeIn");;
+
+function changeQuote() {
+  kote[currentQuote].classList.remove("fadeIn");
+  kote[currentQuote].classList.add("fadeOut");
+
+    if (currentQuote == kote.length - 1) {
+      currentQuote = 0;
+    }
+    else {
+      currentQuote++;
+    }
+
+    kote[currentQuote].classList.remove("fadeOut");
+    kote[currentQuote].classList.add("fadeIn");
+   }
+
+var quoteTimer = setInterval(changeQuote, 8000);
 
 
-
+// function function1() {
+//   quote.style.animation = "moveleft2 3s ease-out forwards";
+//   setTimeout(function2, 2000);
+// }
+// function function2() {
+//   show1.style.background = "red";
+// }
+// setTimeout(function1, 5000);
 
 
 
