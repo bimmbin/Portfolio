@@ -316,6 +316,25 @@ nav ul li:hover {
 blockquote {
     padding-top: 2rem;
     font-size: 14px;
+    font-weight: lighter;
+}
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 2em;
+    line-height: 0;
+    top: 3rem;
+    left: -15px;
+    content: "\201C";
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+    float:right;
+    font-size:2em;
+    margin-left: 5px;
+    line-height: 1;
+    content: "\201D";
 }
 .boxcont2 .boxcont2-flex {
     margin-top: 10px;
