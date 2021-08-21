@@ -73,6 +73,7 @@ header {
     z-index: 50;
     transform: translateX(100%); 
     animation: headani 0.8s ease-in-out forwards;
+    background: rgba(61, 135, 179, 0.356);
 }
 header h1 {
     font-size: 22px;
@@ -568,7 +569,6 @@ p {
 .slide1 {
     animation: slideup 0.5s 2s linear forwards;
     opacity: 0;
-    background: rgb(95, 38, 38);
 }
 
 
