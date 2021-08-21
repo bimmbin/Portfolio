@@ -144,6 +144,18 @@
     #show4 {
         height: 2160px;
         margin-left: 0;
+        align-items: baseline;
+    }
+    #show4 .GetInT {
+        font-size: 80px;
+        line-height: 4rem;
+    }
+    #show4 .GetInT2 { 
+        font-size: 31px;
+    }
+    #show4 {
+        height: 1440px;
+        margin-left: 8%;
     }
     #show4 .GetInT {
         font-size: 50px;
@@ -153,37 +165,24 @@
         font-size: 31px;
     }
     #show4 form {
-        width: 600px;
-        height: 550px;
-        padding: 10px 20px 25px;
-        border-radius: 10px;
-        box-shadow: 4px 4px 9px black;
-        
+        /* display: flex; */
+        width: 40%;
+        height: 350px;
+        margin-left: 20rem; 
     }
     #show4 .txtfield {
-        width: 31.9rem;
-        padding: 4.8px;
+        width: 43.5%;
+    }
+    #show4 .divEmail {
+        position: relative;
+        top: 0px;
+        left: 49%;
+        margin-top: -4.4rem;
     }
     #show4 textarea {
-        width: 32.5rem;
-        padding-bottom: 9.66rem;
+        width: 92%;
     }
     #show4 button {
-        padding: 10px 20px;
-        border-radius: 20px;
-        font-size: 24.15px;;
-    }
-    #show4 form p {
-        font-size: 25.76px;
-        padding: 10px 0 0 0;
-    }
-    #show4 form p:nth-child(1) {
-        margin-right: 28rem;
-    }
-    #show4 form p:nth-child(3) {
-        margin-right: 28.5rem;
-    }
-    #show4 form p:nth-child(5) {
-        margin-right: 25.6rem;
+        margin-left: 41.5%;
     }
 }

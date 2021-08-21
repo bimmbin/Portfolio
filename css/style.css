@@ -73,7 +73,7 @@ header {
     z-index: 50;
     transform: translateX(100%); 
     animation: headani 0.8s ease-in-out forwards;
-    background: rgba(61, 135, 179, 0.356);
+    background: rgba(228, 201, 50, 0.356);
 }
 header h1 {
     font-size: 22px;
@@ -495,7 +495,6 @@ p {
 
 #show4 {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     margin-left: 8%;
     height: 800px;
@@ -509,53 +508,88 @@ p {
     margin-left: 0rem;
 }
 #show4 .GetInT {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 4rem;
 }
 #show4 .GetInT2 { 
-    font-size: 19px;
+    font-size: 24px;
 }
 #show4 form {
-    display: flex;
+    /* display: flex; */
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 365px;
-    height: 370px;
+    width: 48%;
+    height: 350px;
     padding: 10px 20px 25px;
     border-radius: 5px;
     background: #181818;
     box-shadow: 3px 3px 6px black;
+    margin-left: 2.2rem;
     
 }
 #show4 .txtfield {
-    width: 19.8rem;
-    padding: 3px;
+    width: 41.5%;
+    padding: 10px 3px 3px 3px;
     outline: none;
-    background: #fff;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-color: #fff;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 16px;
+    margin-left: 20px;
+    text-indent: 3px;
+}
+#show4 .divEmail {
+    position: relative;
+    top: 0px;
+    left: 49%;
+    margin-top: -4.4rem;
+}
+#show4 .divMessage {
+    padding-top: 0.7rem;
+}
+#show4 .divName {
+    padding-top: 1rem;
 }
 #show4 textarea {
-    width: 20.2rem;
-    padding-bottom: 6rem;
+    width: 90%;
+    padding: 0.3rem 0.3rem 1rem;
+    margin: 10px 0 0 20px;
     outline: none;
     resize: none;
-    background: #fff;
+    background: rgb(255, 255, 255);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins';
 }
+textarea::placeholder {
+    opacity: 1; 
+    padding: 0 0px;
+}
+  
 #show4 button {
     padding: 10px 20px;
     border-radius: 20px;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Poppins';
     font-weight: bold;
     border-style: solid;
     border-color: rgb(31, 31, 31);
     cursor: pointer;
+    margin-top: 8px;
+    margin-left: 41.5%;
 }
 #show4 form p {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px 0 0 0;
+    margin-left: 20px;
 }
-#show4 form p:nth-child(1) {
+/* #show4 form p:nth-child(1) {
     margin-right: 17rem;
 }
 #show4 form p:nth-child(3) {
@@ -563,7 +597,7 @@ p {
 }
 #show4 form p:nth-child(5) {
     margin-right: 15.7rem;
-}
+} */
 
 
 .slide1 {
@@ -724,17 +758,36 @@ p {
             margin-top: 5rem;
     }
     #show4 form {
+        height: 400px;
         margin-top: -2rem;
         width: 85%;
+        margin-left: 0;
     }
     #show4 .txtfield {
-        width: 90%;
+        width: 99%;
+        margin: 0;
+    }
+    #show4 .divName {
+        padding: 0;
+    }
+    #show4 .divEmail {
+        position: relative;
+        top: 0px;
+        left: 0;
+        margin: 0;
     }
     #show4 textarea {
-        width: 92.6%;
+        width: 97%;
+        margin: 0;
+    }
+    #show4 form p {
+        margin-left: 0px;
+    }
+    #show4 button {
+        margin-left: 30%;
     }
 
-    #show4 form p:nth-child(1) {
+    /* #show4 form p:nth-child(1) {
         margin-right: 76.5%;
     }
     #show4 form p:nth-child(3) {
@@ -742,7 +795,7 @@ p {
     }
     #show4 form p:nth-child(5) {
         margin-right: 68%;
-    }
+    } */
     /** * ** * ** * * * */
     /* keyframes */
 
