@@ -73,7 +73,7 @@ header {
     z-index: 50;
     transform: translateX(100%); 
     animation: headani 0.8s ease-in-out forwards;
-    background: rgba(228, 201, 50, 0.356);
+    background: rgba(77, 28, 118, 0.356);
 }
 header h1 {
     font-size: 22px;
@@ -537,7 +537,7 @@ p {
     border: none;
     border-color: #fff;
     border-radius: 5px;
-    color: #FFF;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     margin-left: 20px;
     text-indent: 3px;
