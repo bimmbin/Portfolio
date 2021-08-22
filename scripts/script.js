@@ -1,4 +1,5 @@
 var babo = document.querySelector("header");
+var nab = document.querySelector("nav");
 var pindut = document.querySelector(".toggle");
 var menu = document.querySelector(".menu");
 const show1 = document.querySelector("#show1");
@@ -17,6 +18,15 @@ var lista = document.querySelectorAll("nav ul li");
 var quote = document.querySelector('.boxcont2');
 var mouse = document.querySelector('.boxcont');
 
+babo.style.animation = "headani 0.8s ease-in-out forwards";
+nab.style.animation = "navani 1s 0.9s ease-in-out forwards";
+
+function removeAni () {
+  babo.style.animation = "";
+  babo.style.transform = "translateY(0%)"
+  nab.style.animation = "";
+  nab.style.transform = "translateX(0%)"
+}
 
 quote.style.animation = "moveleft2 0.8s ease-out forwards";
 
@@ -61,16 +71,9 @@ var x = window.matchMedia("(min-width: 2560px")
 var x2 = window.matchMedia("(max-width: 3100px)")
 var y = window.matchMedia("(min-width: 3840px)")
 var z = window.matchMedia("(max-width: 2500px)")
+var z2 = window.matchMedia("(min-width: 490px)")
+var phoneSize = window.matchMedia("(max-width: 480px)")
 
-// default scroll value
-// var scroll1 = 300;
-// var scroll2 = 1100;
-
-// var scroll3 = 1101;
-// var scroll4 = 2100;
-
-// var scroll5 = 2101;
-// default scroll value
 if (x.matches&&x2.matches) {
   var scroll1 = 700;
   var scroll2 = 2000;
@@ -89,7 +92,7 @@ else if (y.matches) {
 
   var scroll5 = 5600;
 }
-else if (z.matches) {
+else if (z.matches&&z2.matches) {
 var scroll1 = 400;
 var scroll2 = 1100;
 
@@ -104,20 +107,29 @@ window.addEventListener('scroll', function () {
 // console.log(window.pageYOffset);
 var scroll = window.pageYOffset;
 
+if (phoneSize.matches) {
+  if (scroll > 0){ 
+    babo.style.background = "#212121";
+    babo.style.boxShadow = "3px 3px 6px black";
+  }
+  else {
+    babo.style.background = "";
+    babo.style.boxShadow = "";
+  }
+}
+
+
+
 if (scroll == 0) {
   quote.style.animation = "moveleft2 0.5s ease-out forwards";
   lista[0].classList.remove("addthis");
   mouse.style.animation = "fade2 1s forwards";
-  babo.style.background = "";
-  babo.style.boxShadow = "";
-}
-else {
 }
 if (scroll >= 50) {
   quote.style.animation = "moveleft 0.3s ease-in forwards";
   mouse.style.animation = "fade 0.5s forwards";
-  babo.style.background = "#212121";
-  babo.style.boxShadow = "3px 3px 6px black";
+  
+  removeAni();
 }
 else {
 }
@@ -142,8 +154,6 @@ else {
 
 });
 
-var hayt = window.innerHeight;
-console.log(hayt);
 // var btn1 = document.querySelector('.btn1');
 
 
