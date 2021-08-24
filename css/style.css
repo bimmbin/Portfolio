@@ -13,9 +13,9 @@
   }
 
 body {
-    background: #121212;
+    background: #212121;
     font-family: 'Poppins';
-    color: white;
+    color: rgb(255, 255, 255);
     height: 100%;
 }
 footer {
@@ -68,9 +68,9 @@ header {
     position: absolute;
     height: 70px;
     width: 100%;
-    border-style: solid;
-    border-width: 0px 1px 1px 1px;
-    border-color: rgb(47, 47, 47);
+    /* border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgb(47, 47, 47); */
     z-index: 50;
     transform: translateX(100%); 
 }
@@ -152,7 +152,7 @@ nav {
     width: 150px;
     height: 100%;
     border-style: solid;
-    border-width: 0px 1px 1px 0px;
+    border-width: 0px 1px 0px 0px;
     border-color: rgb(47, 47, 47);
     box-sizing: border-box;
     z-index: 50;
@@ -166,7 +166,6 @@ nav {
     align-items: center;
 }
 nav h1 {
-    color: #f1f1f1;
     margin: 0;
     cursor: pointer;
     font-size: 22px;
@@ -215,7 +214,6 @@ nav ul li:hover {
     height: 800px;
 }
 #show1 .first1 {
-    color: #f1f1f1;
     font-size: 50px;
 }
 #show1 .second1 {
@@ -379,9 +377,11 @@ blockquote:after {
 .projContainer {
     min-width: 300px;
     height: 350px;
-    background: #181818;
+    background: #303030;
     position: relative;
-    box-shadow: 3px 3px 6px black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.472);
+    border-radius: 10px;
+    overflow: hidden;
 
 }
 .title {
@@ -402,7 +402,7 @@ p {
 .span1 {
     position: absolute;
     padding: 10px 47.9px;
-    background: #181818;
+    background: #303030;
     border-width: 1px 1px 0 0;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.13);
@@ -413,7 +413,7 @@ p {
 .span2 {
     position: absolute;
     padding: 10px 59.9px;
-    background: #181818;
+    background: #303030;
     border-width: 1px 0 0 1px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.13);
@@ -440,7 +440,6 @@ p {
 
 #show3 {
     padding-top: 2rem;
-    color: #f1f1f1;
     margin-left: 8%;
     height: 800px;
 }

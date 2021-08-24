@@ -128,7 +128,6 @@ if (scroll == 0) {
 if (scroll >= 50) {
   quote.style.animation = "moveleft 0.3s ease-in forwards";
   mouse.style.animation = "fade 0.5s forwards";
-  
   removeAni();
 }
 else {
