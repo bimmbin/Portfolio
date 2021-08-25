@@ -19,16 +19,14 @@
         height: 1080px;
     }
     #show1 .first1 {
-        font-size: 70px;
+        font-size: 100px;
+        width: 60rem;
+        padding-top: 10rem;
+        line-height: 7rem;
+        font-family: 'Besley', serif;
+        font-weight: lighter;
     }
-    #show1 .second1 {
-        padding-top: 20rem;
-    }
-    #show1 .second1, .second2 {
-        font-size: 25.8px;
-        width: 30rem;
-    }
-    
+
     .box2 {
         width: 250px;
     }

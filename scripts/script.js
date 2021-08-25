@@ -18,8 +18,11 @@ var lista = document.querySelectorAll("nav ul li");
 var quote = document.querySelector('.boxcont2');
 var mouse = document.querySelector('.boxcont');
 
-babo.style.animation = "headani 0.8s ease-in-out forwards";
-nab.style.animation = "navani 1s 0.9s ease-in-out forwards";
+function introAni() {
+  babo.style.animation = "headani 0.8s ease-in-out forwards";
+  nab.style.animation = "navani 1s 0.9s ease-in-out forwards";
+
+}
 
 function removeAni () {
   babo.style.animation = "";
@@ -82,6 +85,7 @@ if (x.matches&&x2.matches) {
   var scroll4 = 3400;
 
   var scroll5 = 3401;
+  introAni();
 }
 else if (y.matches) {
   var scroll1 = 1000;
@@ -91,6 +95,7 @@ else if (y.matches) {
   var scroll4 = 4700;
 
   var scroll5 = 5600;
+  introAni();
 }
 else if (z.matches&&z2.matches) {
 var scroll1 = 400;
@@ -100,6 +105,7 @@ var scroll3 = 1101;
 var scroll4 = 2400;
 
 var scroll5 = 2401;
+introAni();
 }
 
 window.addEventListener('scroll', function () {
@@ -108,6 +114,7 @@ window.addEventListener('scroll', function () {
 var scroll = window.pageYOffset;
 
 if (phoneSize.matches) {
+  babo.style.animation = "";
   if (scroll > 0){ 
     babo.style.background = "#212121";
     babo.style.boxShadow = "3px 3px 6px black";
@@ -117,8 +124,6 @@ if (phoneSize.matches) {
     babo.style.boxShadow = "";
   }
 }
-
-
 
 if (scroll == 0) {
   quote.style.animation = "moveleft2 0.5s ease-out forwards";
@@ -152,6 +157,7 @@ else {
 }
 
 });
+
 
 // var btn1 = document.querySelector('.btn1');
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@700&family=Rampart+One&display=swap');
 * {
     margin: 0; 
     padding: 0;
@@ -13,7 +14,7 @@
   }
 
 body {
-    background: #212121;
+    background: #121212;
     font-family: 'Poppins';
     color: rgb(255, 255, 255);
     height: 100%;
@@ -25,8 +26,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #212121;
-    box-shadow: -1px 0px 6px black;
+    background: #1D1D1D;
     z-index: 11;
 }
 footer p {
@@ -173,10 +173,6 @@ nav h1 {
     text-align: center;
     padding: 18.5px 34px;
 }
-nav h1:hover {
-    color:#9413B1;
-    transition: 0.2s;
-}
 nav ul {
     margin-top: -5rem;
     padding: 0;
@@ -214,15 +210,12 @@ nav ul li:hover {
     height: 800px;
 }
 #show1 .first1 {
-    font-size: 50px;
-}
-#show1 .second1 {
-    padding-top: 13rem;
-}
-#show1 .second1, .second2 {
-    color: #676A70;
-    font-size: 20px;
-    width: 23rem;
+    font-size: 70px;
+    width: 40rem;
+    padding-top: 10rem;
+    line-height: 5rem;
+    font-family: 'Besley', serif;
+    font-weight: lighter;
 }
 #show1 ul li img {
     width: 25px;
@@ -377,7 +370,7 @@ blockquote:after {
 .projContainer {
     min-width: 300px;
     height: 350px;
-    background: #303030;
+    background: #1D1D1D;
     position: relative;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.472);
     border-radius: 10px;
@@ -402,7 +395,7 @@ p {
 .span1 {
     position: absolute;
     padding: 10px 47.9px;
-    background: #303030;
+    background: #1D1D1D;
     border-width: 1px 1px 0 0;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.13);
@@ -413,7 +406,7 @@ p {
 .span2 {
     position: absolute;
     padding: 10px 59.9px;
-    background: #303030;
+    background: #1D1D1D;
     border-width: 1px 0 0 1px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.13);
@@ -458,15 +451,13 @@ p {
     flex-wrap: wrap;
 }
 #show3 ul li {
-    background: white;
+    background: #e7e7e7;
     padding: 6px 10px;
-    border: 2px solid black;
     border-radius: 10px;
     font-weight: bold;
     color: black;
-    background-clip: padding-box;
     width: fit-content;
-    margin-bottom: 5px;
+    margin: 10px 5px 5px 0;
 }
 .skill4, .dskill3 {
     line-height: 1px;
@@ -517,10 +508,10 @@ p {
     justify-content: center;
     align-items: center;
     width: 48%;
-    height: 350px;
+    height: 340px;
     padding: 10px 20px 25px;
     border-radius: 5px;
-    background: #181818;
+    background: #1D1D1D;
     box-shadow: 3px 3px 6px black;
     margin-left: 2.2rem;
     
@@ -553,7 +544,7 @@ p {
 #show4 textarea {
     width: 90%;
     padding: 0.3rem 0.3rem 1rem;
-    margin: 10px 0 0 20px;
+    margin-left: 20px;
     outline: none;
     resize: none;
     background: rgb(255, 255, 255);
@@ -644,15 +635,10 @@ textarea::placeholder {
     #show1 {
         margin-left: 0;
     }
-    #show1 .second1 {
-        padding-top: 12rem;
-    }
     #show1 .first1 {
         font-size: 35px;
-    }
-    #show1 .second1, .second2 {
-        font-size: 15px;
-        width: 16rem;
+        width: 20rem;
+        line-height: 3rem;
     }
     .box1 {
         margin-bottom: 500px;

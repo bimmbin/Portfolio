@@ -28,16 +28,15 @@
 
     #show1 {
         height: 2160px;
+        margin-left: 0;
     }
     #show1 .first1 {
-        font-size: 120px;
-    }
-    #show1 .second1 {
-        padding-top: 35rem;
-    }
-    #show1 .second1, .second2 {
-        font-size: 40px;
-        width: 45rem;
+        font-size: 180px;
+        width: 95rem;
+        padding-top: 30rem;
+        line-height: 12rem;
+        font-family: 'Besley', serif;
+        font-weight: lighter;
     }
     
     .box1 {
