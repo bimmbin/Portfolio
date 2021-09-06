@@ -37,6 +37,8 @@ footer p {
     height: 100%;
 }
 
+
+
 .container1 {
     width: 85%;
     margin: auto;
@@ -68,11 +70,7 @@ header {
     position: absolute;
     height: 70px;
     width: 100%;
-    /* border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: rgb(47, 47, 47); */
     z-index: 50;
-    transform: translateX(100%); 
 }
 header h1 {
     font-size: 22px;
@@ -97,30 +95,7 @@ header ul li {
     margin: 0 20px;
     color: #676A70;
 }
-.menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #212121;
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: -2;
-    transform: translateY(-50rem);
-}
-.menu p {
-    margin: 10px 0;
-    font-size: 16px;
-}
-.menu p:nth-child(1) {
-    margin-top: 60px;
-}
-.menu.active {
-    animation: menuDown 0.4s ease-out forwards;
-}
+
 .toggle {
     position: relative;
     background: url('../img/burgerIcon.png');
@@ -131,7 +106,7 @@ header ul li {
     background-position: center;
     cursor: pointer;
     display: none;
-    margin: 5px 10px 0 0;
+    margin: 5px 30px 0 0;
     user-select: none;  
 }
 .toggle.active { 
@@ -142,8 +117,6 @@ header ul li {
     background-size: 25px;
     background-position: center;
 }
-
-
 
 nav {
     position: fixed;
@@ -156,39 +129,104 @@ nav {
     border-color: rgb(47, 47, 47);
     box-sizing: border-box;
     z-index: 50;
-    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s;
 }
-.center {
+nav h1 {
+    margin-top: 15px;
+    font-size: 23px;
+    cursor: pointer;
+}
+nav ul {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-nav h1 {
-    margin: 0;
-    cursor: pointer;
-    font-size: 22px;
-    width: fit-content;
-    text-align: center;
-    padding: 18.5px 34px;
-}
-nav ul {
-    margin-top: -5rem;
-    padding: 0;
     list-style-type: none;
 }
-
 nav ul li {
-    color: #676A70;
     padding: 20px 42px;
     cursor: pointer;
-    font-weight: bold;
 }
-nav ul li:hover {
-    color: #fff;
-    transition: 0.2s;
+nav ul li:nth-child(2) {
+    padding: 20px 43px;
 }
+nav ul li:nth-child(3) {
+    padding: 20px 50.5px;
+}
+
+
+
+/* -------toggleSwitch--------- */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #888888;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#2e2e2e;
+  }
+   
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  /* Rounded sliders */
+    .slider.round {
+    border-radius: 26px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
 
 #inside {
     width: 100%;
@@ -256,8 +294,7 @@ nav ul li:hover {
     margin-bottom: -20px;
     box-shadow: 1px 0px 0px 0px #70707055;
 }
-.boxcont p {
-    color: #707070b9;
+.boxcont p {    
     margin: 10px 0;
 }
 .boxcont img {
@@ -275,12 +312,15 @@ nav ul li:hover {
     flex-direction: column;
     z-index: -5;
 }
+.boldText {
+    font-weight: bold;
+}
 .box2 {
     position: absolute;
     width: 320px;
     height: 200px;
     margin-bottom: 1.2rem;
-    margin-left: 15rem;
+    margin-left: 17%;
     transition: opacity 0.2s ease-in-out;
     opacity: 0;
 }
@@ -291,21 +331,20 @@ nav ul li:hover {
     opacity: 0;
 }
 
-.box3 {
+/* .box3 {
     position: absolute;
     width: 320px;
     height: 200px;
-    background: #1F1A24;
+    background: #ebebeb;
     margin-bottom: 1.2rem;
     margin-left: 15rem;
     z-index: -1;
     transform: translateX(-75%);
     padding-left: 20rem;
-}
+} */
 blockquote {
     padding-top: 2rem;
     font-size: 14px;
-    font-weight: lighter;
 }
 blockquote:before {
     font-family: Georgia, serif;
@@ -349,7 +388,7 @@ blockquote:after {
 }
 .boxcont2-flex .p2 {
     font-size: 13px;
-    color: #707070b9;
+    opacity: 40%;
 }
 
 /* PROJECTS */
@@ -372,11 +411,11 @@ blockquote:after {
     height: 350px;
     background: #1D1D1D;
     position: relative;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.472);
+    box-shadow: 6px 9px 15px #00000078;
     border-radius: 10px;
     overflow: hidden;
-
 }
+
 .title {
     font-size: 30px;
     margin: 5px 0 20px 0;
@@ -386,7 +425,6 @@ blockquote:after {
     position: absolute;
     left: 2rem;
     width: 93%;
-
 }
 p {
     font-size: 12px;/* temporary width */
@@ -512,15 +550,14 @@ p {
     padding: 10px 20px 25px;
     border-radius: 5px;
     background: #1D1D1D;
-    box-shadow: 3px 3px 6px black;
+    box-shadow: 6px 9px 15px #00000078;
     margin-left: 2.2rem;
-    
 }
 #show4 .txtfield {
     width: 41.5%;
     padding: 10px 3px 3px 3px;
     outline: none;
-    background: rgb(255, 255, 255);
+    background: #dbdbdb;
     border: none;
     border-color: #fff;
     border-radius: 5px;
@@ -547,7 +584,7 @@ p {
     margin-left: 20px;
     outline: none;
     resize: none;
-    background: rgb(255, 255, 255);
+    background: #dbdbdb;
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -576,32 +613,29 @@ textarea::placeholder {
     padding: 10px 0 0 0;
     margin-left: 20px;
 }
-/* #show4 form p:nth-child(1) {
-    margin-right: 17rem;
+
+/* -------toggleCss------ */
+
+.lightModeBack {
+    background: #f1f1f1 !important;
+    color: #000;
 }
-#show4 form p:nth-child(3) {
-    margin-right: 17.5rem;
+.lightMode {
+    background: #7a7a7a !important;
 }
-#show4 form p:nth-child(5) {
-    margin-right: 15.7rem;
-} */
-
-
-.slide1 {
-    animation: slideup 0.5s 2s linear forwards;
-    opacity: 0;
+.borderColor {
+    border-color: rgb(82, 82, 82) !important;
 }
-
-
-
-
+.drop {
+    transform: translateY(19rem) !important;
+}
+.headColor {
+    background: #1D1D1D !important;
+}
 
 @media (max-width: 480px) {
 
     /* header  */
-    nav {
-        display: none;
-    }
     header {
         position: fixed;
         border: none;
@@ -619,6 +653,74 @@ textarea::placeholder {
         display: block;
     }
     
+    nav {
+        width: 100%;
+        height: 70px;
+        border: none;
+        box-sizing: border-box;
+        z-index: 50;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav h1 {
+        margin: 25px 25px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .switch {
+        margin-bottom: 2rem;
+        width: 50px;
+        height: 26px;
+    }
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color:#2e2e2e;
+      }
+       
+      input:checked + .slider:before {
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+      }
+    
+      /* Rounded sliders */
+        .slider.round {
+        border-radius: 26px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+    nav ul {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        top: -19rem;
+        padding: 9rem 0 1rem 0;
+        background: #1d1d1d;
+        z-index: -5;
+        transition: all 0.5s;
+    }
+    ul li {
+        margin: 0px;
+        padding: 10px 0;
+    }
 
     /* section */ 
     .container {
@@ -713,6 +815,7 @@ textarea::placeholder {
     .projContainer {
         margin: 20px 0;
     }
+
     /** * ** * ** * * * */
 
     /* show3 */
@@ -725,6 +828,7 @@ textarea::placeholder {
         float: left;
         margin-top: 0;
     }
+
     /** * ** * ** * * * */
 
     /* show3 */

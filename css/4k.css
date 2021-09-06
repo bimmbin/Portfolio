@@ -43,33 +43,32 @@
         padding-bottom: 20px;
     }
     .box2 {
-        width: 250px;
+        width: 500px;
     }
-    .box2 .quote {
+    .box2 blockquote {
         padding-top: 1.8rem;
-        font-size: 16px;
+        font-size: 30px;
+    }
+    .boxcont2 .boxcont2-flex {
+        margin-top: 30px;
     }
     .boxcont2-flex img {
         width: 50px;
         height: 50px;
     }
     .boxcont2-flex .line {
-        height: 50px;
+        width: 70px;
     }
     .boxcont2-flex p {
-        font-size: 16px;
+        font-size: 30px;
     }
     .boxcont2-flex .p2 {
-        font-size: 14px;
+        font-size: 25px;
     }
-    .box2, .box3 {
-        margin-bottom: 12rem;
+    .box2 {
+        margin-bottom: 25rem;
         height: 250px;
     }
-    .box3 {
-	transform: translateX(-85%);
-    }
-
 
 
     #show2 {

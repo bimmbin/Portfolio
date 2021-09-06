@@ -14,17 +14,18 @@
         left: 10px;
     }
     100% {
-        left: -50rem;
+        left: -100%;
     }
 }
 @keyframes moveleft2 {
-    from {
-        left: -50rem;
-        opacity: 0;
+    0% {
+        left: -50%;
     }
-    to {
-        left: 0;
-        opacity: 1;
+    90% {
+        left: 10px;
+    }
+    100% {
+        left: 0rem;
     }
 }
 @keyframes fade {
