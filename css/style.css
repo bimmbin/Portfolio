@@ -19,6 +19,17 @@ body {
     color: rgb(255, 255, 255);
     height: 100%;
 }
+img {
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-tap-highlight-color: transparent;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+  user-select: none;
+
+}
+
 footer {
     position: absolute;
     height: 80px;
@@ -627,11 +638,16 @@ textarea::placeholder {
     border-color: rgb(82, 82, 82) !important;
 }
 .drop {
-    transform: translateY(19rem) !important;
+    transform: translateY(25rem) !important;
 }
-.headColor {
-    background: #1D1D1D !important;
+.headColorLight {
+    background: #7a7a7a !important;
 }
+.headColorDark {
+    background: #1d1d1d !important;
+}
+
+
 
 @media (max-width: 480px) {
 
@@ -711,13 +727,13 @@ textarea::placeholder {
         justify-content: center;
         align-items: center;
         height: max-content;
-        top: -19rem;
+        top: -25rem;
         padding: 9rem 0 1rem 0;
         background: #1d1d1d;
         z-index: -5;
         transition: all 0.5s;
     }
-    ul li {
+    nav ul li {
         margin: 0px;
         padding: 10px 0;
     }

@@ -61,6 +61,8 @@ var superToggle = function() {
   skillRound[6].classList.toggle('lightMode');
 }
 
+
+
 pindutan.addEventListener("click", () => {
   badi.classList.toggle('lightModeBack');
   quote.classList.toggle('boldText');
@@ -70,6 +72,7 @@ pindutan.addEventListener("click", () => {
   puter.classList.toggle('boldText');
   superToggle();
 });
+
 
 
 quote.style.animation = "moveleft2 0.8s ease-out forwards";
@@ -137,7 +140,6 @@ var scroll5 = 2401;
 if (phoneSize.matches) {
   pindutan.addEventListener("click", () => {
   menu.classList.toggle('lightMode');
-  nab.classList.toggle('lightMode');
 });
 }
 
@@ -148,10 +150,20 @@ var scroll = window.pageYOffset;
 
 if (phoneSize.matches) {
   if (scroll > 0){ 
-    nab.classList.add("headColor");
+    if (badi.classList.contains('lightModeBack')) {
+      nab.classList.add('headColorLight');
+    } 
+    else {
+      nab.classList.add("headColorDark");
+    }
   }
   else {
-    nab.classList.remove("headColor");
+    if (badi.classList.contains('lightModeBack')) {
+      nab.classList.remove('headColorLight');
+    } 
+    else {
+      nab.classList.remove("headColorDark");
+    }
   }
 }
 
