@@ -19,16 +19,6 @@ body {
     color: rgb(255, 255, 255);
     height: 100%;
 }
-img {
- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
- -webkit-tap-highlight-color: transparent;
- -webkit-user-select: none;
- -khtml-user-select: none;
- -moz-user-select: none;
- -ms-user-select: none;
-  user-select: none;
-
-}
 
 footer {
     position: absolute;
@@ -107,18 +97,103 @@ header ul li {
     color: #676A70;
 }
 
-.toggle {
+#menuToggle {
+   display: none;
+   position: relative;
+   margin: 5px 30px;
+   z-index: 1;
+   
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+ }
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #ffffff;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(40deg);
+ }
+ 
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-40deg);
+ }
+
+
+/* .toggle {
     position: relative;
     background: url('../img/burgerIcon.png');
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     background-repeat: no-repeat;
-    background-size: 30px;
+    background-size: 27px;
     background-position: center;
     cursor: pointer;
     display: none;
-    margin: 5px 30px 0 0;
-    user-select: none;  
+    margin: 0px 30px 0 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
 }
 .toggle.active { 
     background: url('../img/closeIcon.png');
@@ -127,7 +202,7 @@ header ul li {
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
-}
+} */
 
 nav {
     position: fixed;
@@ -150,6 +225,13 @@ nav h1 {
     margin-top: 15px;
     font-size: 23px;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
 }
 nav ul {
     width: 100%;
@@ -222,9 +304,9 @@ nav ul li:nth-child(3) {
   }
    
   input:checked + .slider:before {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
   }
 
   /* Rounded sliders */
@@ -246,11 +328,15 @@ nav ul li:nth-child(3) {
     top: 0;
 }
 .addthis {
-    background: rgba(251, 251, 251, 0.048);
+    background: #1d1d1d;
     box-shadow: 1px 0px 0px 0px #9413B1;
     color: white;
 }
-
+.addthis2 {
+    background: #7a7a7a;
+    box-shadow: 1px 0px 0px 0px #9413B1;
+    color: white;
+}
 /* landing page  */
 
 #show1 {
@@ -644,7 +730,7 @@ textarea::placeholder {
     background: #7a7a7a !important;
 }
 .headColorDark {
-    background: #1d1d1d !important;
+    background: #1d1d1d;
 }
 
 
@@ -706,9 +792,9 @@ textarea::placeholder {
       }
        
       input:checked + .slider:before {
-        -webkit-transform: translateX(20px);
-        -ms-transform: translateX(20px);
-        transform: translateX(20px);
+        -webkit-transform: translateX(22px);
+        -ms-transform: translateX(22px);
+        transform: translateX(22px);
       }
     
       /* Rounded sliders */
@@ -719,7 +805,7 @@ textarea::placeholder {
       .slider.round:before {
         border-radius: 50%;
       }
-    nav ul {
+    .dropDownMenu {
         position: absolute;
         width: 100%;
         display: flex;
@@ -738,15 +824,16 @@ textarea::placeholder {
         padding: 10px 0;
     }
 
+    #menuToggle {
+        display: block;
+    }
+
     /* section */ 
     .container {
         width: 85%;
     }
 
     /* show1 */
-    .slide1 {
-        animation: slideup 1s 1.2s linear forwards;
-    }
     #box {
         display: none;
     }

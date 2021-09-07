@@ -1,7 +1,8 @@
 var babo = document.querySelector("header");
 var nab = document.querySelector("nav");
-var pindut = document.querySelector(".toggle");
-var menu = document.querySelector("nav ul");
+var pindut = document.querySelector("#menuToggle");
+var ex = document.querySelector(".active");
+var menu = document.querySelector(".dropDownMenu");
 const show1 = document.querySelector("#show1");
 const show2 = document.querySelector("#show2");
 const show3 = document.querySelector('#show3');
@@ -25,6 +26,7 @@ var projCard2 = document.querySelectorAll('.span2');
 var porm = document.querySelector('form');
 var puter = document.querySelector('footer');
 var skillRound = document.querySelectorAll('#show3 ul li');
+var burger = document.querySelectorAll('#menuToggle span');
 // var quoteText = document.querySelector('body');
 
 
@@ -74,11 +76,9 @@ pindutan.addEventListener("click", () => {
 });
 
 
-
 quote.style.animation = "moveleft2 0.8s ease-out forwards";
 
 pindut.addEventListener("click", () => {
-  pindut.classList.toggle('active');
   menu.classList.toggle('drop');
 });
 
@@ -138,8 +138,24 @@ var scroll4 = 2400;
 var scroll5 = 2401;
 }
 if (phoneSize.matches) {
+
+  
   pindutan.addEventListener("click", () => {
   menu.classList.toggle('lightMode');
+  if (badi.classList.contains('lightModeBack')) {
+    nab.classList.add('headColorLight');
+    nab.classList.remove("headColorDark");
+    burger[0].style.background = "#000";
+    burger[1].style.background = "#000";
+    burger[2].style.background = "#000";
+  } 
+  else {
+    nab.classList.add("headColorDark");
+    nab.classList.remove('headColorLight');
+    burger[0].style.background = "#fff";
+    burger[1].style.background = "#fff";
+    burger[2].style.background = "#fff";
+  }
 });
 }
 
@@ -152,24 +168,39 @@ if (phoneSize.matches) {
   if (scroll > 0){ 
     if (badi.classList.contains('lightModeBack')) {
       nab.classList.add('headColorLight');
+      nab.classList.remove("headColorDark");
     } 
     else {
       nab.classList.add("headColorDark");
+      nab.classList.remove('headColorLight');
     }
   }
   else {
-    if (badi.classList.contains('lightModeBack')) {
       nab.classList.remove('headColorLight');
-    } 
-    else {
       nab.classList.remove("headColorDark");
-    }
+  }
+}
+
+function removeThis(a) {
+  if (badi.classList.contains('lightModeBack')) {
+    lista[a].classList.remove("addthis2");
+  } 
+  else {
+    lista[a].classList.remove("addthis");
+  }
+}
+function addThis(a) {
+  if (badi.classList.contains('lightModeBack')) {
+    lista[a].classList.add("addthis2");
+  } 
+  else {
+    lista[a].classList.add("addthis");
   }
 }
 
 if (scroll == 0) {
   quote.style.animation = "moveleft2 0.5s ease-out forwards";
-  lista[0].classList.remove("addthis");
+  removeThis(0);
   mouse.style.animation = "fade2 1s forwards";
 }
 if (scroll >= 50) {
@@ -179,22 +210,22 @@ if (scroll >= 50) {
 else {
 }
 if (scroll >= scroll1 && scroll <= scroll2) {
-  lista[0].classList.add("addthis");
+  addThis(0);
 }
 else {
-  lista[0].classList.remove("addthis");
+  removeThis(0);
 }
 if (scroll >= scroll3 && scroll <= scroll4) {
-  lista[1].classList.add("addthis");
+  addThis(1);
 }
 else {
-  lista[1].classList.remove("addthis");
+  removeThis(1);
 }
 if (scroll >= scroll5) {
-  lista[2].classList.add("addthis");
+  addThis(2);
 }
 else {
-  lista[2].classList.remove("addthis");
+  removeThis(2);
 }
 
 });
