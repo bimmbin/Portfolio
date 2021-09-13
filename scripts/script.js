@@ -63,7 +63,47 @@ var superToggle = function() {
   skillRound[6].classList.toggle('lightMode');
 }
 
+function removeThis(a) {
+  if (badi.classList.contains('lightModeBack')) {
+    lista[a].classList.remove("addthis2");
+  } 
+  else {
+    lista[a].classList.remove("addthis");
+  }
+}
+function addThis(a) {
+  if (badi.classList.contains('lightModeBack')) {
+    lista[a].classList.add("addthis2");
+  } 
+  else {
+    lista[a].classList.add("addthis");
+  }
+}
 
+function addthisBug(a) {
+  if (lista[a].classList.contains('addthis')) {
+    lista[a].classList.remove("addthis");
+    lista[a].classList.add("addthis2");
+  }
+}
+function addthisBug2(a) {
+  if (lista[a].classList.contains('addthis2')) {
+    lista[a].classList.remove("addthis2");
+    lista[a].classList.add("addthis");
+  }
+}
+function removeAddthis() {
+  if (badi.classList.contains('lightModeBack')) {
+    for (i = 0; i < 3; i++) {
+      addthisBug(i);
+    }
+  } 
+  else {
+    for (i = 0; i < 3; i++) {
+      addthisBug2(i);
+    }
+  }
+}
 
 pindutan.addEventListener("click", () => {
   badi.classList.toggle('lightModeBack');
@@ -73,8 +113,8 @@ pindutan.addEventListener("click", () => {
   puter.classList.toggle('lightMode');
   puter.classList.toggle('boldText');
   superToggle();
+  removeAddthis();
 });
-
 
 quote.style.animation = "moveleft2 0.8s ease-out forwards";
 
@@ -84,23 +124,15 @@ pindut.addEventListener("click", () => {
 
 btnPc1.addEventListener("click", () => {
   show2.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  menu.classList.remove('drop');
-  pindut.classList.remove('active');
 });
 btnPc2.addEventListener("click", () => {
   show3.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  menu.classList.remove('drop');
-  pindut.classList.remove('active');
 });
 btnPc3.addEventListener("click", () => {
   show4.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  menu.classList.remove('drop');
-  pindut.classList.remove('active');
 });
 btnHome1.addEventListener("click", () => {
   window.scrollTo({top: 0, behavior: 'smooth',})
-  menu.classList.remove('drop');
-  pindut.classList.remove('active');
 });
 
 var x = window.matchMedia("(min-width: 2560px")
@@ -181,22 +213,6 @@ if (phoneSize.matches) {
   }
 }
 
-function removeThis(a) {
-  if (badi.classList.contains('lightModeBack')) {
-    lista[a].classList.remove("addthis2");
-  } 
-  else {
-    lista[a].classList.remove("addthis");
-  }
-}
-function addThis(a) {
-  if (badi.classList.contains('lightModeBack')) {
-    lista[a].classList.add("addthis2");
-  } 
-  else {
-    lista[a].classList.add("addthis");
-  }
-}
 
 if (scroll == 0) {
   quote.style.animation = "moveleft2 0.5s ease-out forwards";
