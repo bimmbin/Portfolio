@@ -104,8 +104,11 @@
         font-size: 50px;
     }
     #show3 .second2, .third2, .fourth2 {
-        font-size: 32px;
-        margin: 20px 0;
+        font-size: 28px;
+        margin: 50px 0;
+    }
+    .third2:nth-child(2) {
+        padding-top: 2rem;
     }
     .fifth2, .dskill {
         font-size: 50px;
@@ -134,7 +137,7 @@
         line-height: 4rem;
     }
     #show4 .GetInT2 { 
-        font-size: 31px;
+        font-size: 28px;
     }
     #show4 form {
         /* display: flex; */

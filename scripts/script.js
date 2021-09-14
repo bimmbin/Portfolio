@@ -156,9 +156,9 @@ else if (y.matches) {
   var scroll2 = 2900;
 
   var scroll3 = 3100;
-  var scroll4 = 4700;
+  var scroll4 = 5300;
 
-  var scroll5 = 5600;
+  var scroll5 = 5500;
 }
 else if (z.matches&&z2.matches) {
 var scroll1 = 400;

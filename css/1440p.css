@@ -109,7 +109,10 @@
     }
     #show3 .second2, .third2, .fourth2 {
         font-size: 32px;
-        margin: 20px 0;
+        margin: 40px 0;
+    }
+    .third2:nth-child(2) {
+        padding-top: 2rem;
     }
     .fifth2, .dskill {
         font-size: 50px;
