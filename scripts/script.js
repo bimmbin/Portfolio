@@ -124,15 +124,19 @@ pindut.addEventListener("click", () => {
 
 btnPc1.addEventListener("click", () => {
   show2.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  menu.classList.remove('drop');
 });
 btnPc2.addEventListener("click", () => {
   show3.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  menu.classList.remove('drop');
 });
 btnPc3.addEventListener("click", () => {
   show4.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  menu.classList.remove('drop');
 });
 btnHome1.addEventListener("click", () => {
   window.scrollTo({top: 0, behavior: 'smooth',})
+  menu.classList.remove('drop');
 });
 
 var x = window.matchMedia("(min-width: 2560px")
