@@ -6,9 +6,8 @@
     nav {
         width: 15rem;
     }
-    nav h1 {
-        padding: 50px 45px;
-        font-size: 40px;
+    nav img {
+        width: 160px;
     }
     nav ul li {
         font-size: 25px;
