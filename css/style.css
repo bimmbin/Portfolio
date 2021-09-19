@@ -67,36 +67,6 @@ section {
     overflow: hidden;
 }
 
-header {
-    position: absolute;
-    height: 70px;
-    width: 100%;
-    z-index: 50;
-}
-header h1 {
-    font-size: 22px;
-    cursor: pointer;
-    margin-top: 0px;
-    display: none;
-    user-select: none;  
-    color: #fff;
-    width: fit-content;
-}
-header ul {
-    display: flex;
-    list-style-type: none;
-    margin-top: 5px;
-    margin-left: 7rem;
-}
-header ul li img {
-    width: 15px;
-    margin: 0 10px;
-}
-header ul li {
-    margin: 0 20px;
-    color: #676A70;
-}
-
 #menuToggle {
    display: none;
    position: relative;
@@ -167,9 +137,8 @@ nav {
     justify-content: space-between;
     transition: background 0.3s;
 }
-nav h1 {
-    padding: 20px 32px;
-    font-size: 23px;
+nav img {
+    padding: 0;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
@@ -275,12 +244,12 @@ nav ul li:nth-child(3) {
 }
 .addthis {
     background: #1d1d1d;
-    box-shadow: 1px 0px 0px 0px #9413B1;
+    box-shadow: 1px 0px 0px 0px #f15a24;
     color: white;
 }
 .addthis2 {
     background: #7a7a7a;
-    box-shadow: 1px 0px 0px 0px #9413B1;
+    box-shadow: 1px 0px 0px 0px #f15a24;
     color: white;
 }
 /* landing page  */
@@ -341,7 +310,7 @@ nav ul li:nth-child(3) {
     margin: 10px 0;
 }
 .boxcont img {
-    width: 20px;
+    width: 30px;
     animation: mouseup 1s ease-out infinite alternate-reverse;
 }
 .boxcont2 {
@@ -664,7 +633,7 @@ textarea::placeholder {
     color: #000;
 }
 .lightMode {
-    background: #7a7a7a !important;
+    background: #adadad !important;
 }
 .borderColor {
     border-color: rgb(82, 82, 82) !important;
@@ -673,7 +642,7 @@ textarea::placeholder {
     transform: translateY(25rem) !important;
 }
 .headColorLight {
-    background: #7a7a7a !important;
+    background: #adadad !important;
 }
 .headColorDark {
     background: #1d1d1d;
@@ -698,9 +667,10 @@ textarea::placeholder {
         flex-direction: row;
         align-items: center;
     }
-    nav h1 {
-        font-size: 25px;
-        cursor: pointer;
+    nav img {
+        width: 60px;
+        height: 60px;
+        margin-left: 22px;
     }
     .switch {
         margin-bottom: 2rem;
