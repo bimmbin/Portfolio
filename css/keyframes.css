@@ -8,24 +8,24 @@
 }
 @keyframes moveleft {
     0% {
-        left: 0;
+        transform: translateX(0px) ;
     }
     10% {
-        left: 10px;
+        transform: translateX(10px) ;
     }
     100% {
-        left: -100%;
+        transform: translateX(-100%) ;
     }
 }
 @keyframes moveleft2 {
     0% {
-        left: -50%;
+        transform: translateX(-50%) ;
     }
     90% {
-        left: 10px;
+        transform: translateX(10px) ;
     }
     100% {
-        left: 0rem;
+        transform: translateX(0px) ;
     }
 }
 @keyframes fade {
@@ -64,22 +64,3 @@
     }
 }
 
-@keyframes headani {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0%);
-        border-width: 0px 0px 1px 0px;
-    }
-}
-
-@keyframes navani {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0%);
-        border-width: 0px 1px 0px 0px;
-    }
-}
