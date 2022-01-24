@@ -27,6 +27,7 @@ var porm = document.querySelector('form');
 var puter = document.querySelector('footer');
 var skillRound = document.querySelectorAll('#show3 ul li');
 var burger = document.querySelectorAll('#menuToggle span');
+var aa = document.querySelectorAll('.span2 a');
 // var quoteText = document.querySelector('body');
 
 
@@ -61,6 +62,7 @@ var superToggle = function() {
   skillRound[4].classList.toggle('lightMode');
   skillRound[5].classList.toggle('lightMode');
   skillRound[6].classList.toggle('lightMode');
+  aa.classList.toggle('lightMode');
 }
 
 function removeThis(a) {
